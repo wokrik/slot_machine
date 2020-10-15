@@ -1,0 +1,46 @@
+body{
+    font-family: sans-serif;
+}
+
+#start{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background: #fa3434;
+    text-transform: uppercase;
+    color: white;
+    margin: 1rem;
+}
+
+#start:hover {
+    cursor: pointer;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+    opacity: 1 !important;
+}
+
+#start.busy {
+    background: darkgray;
+}
+
+#start.busy:hover {
+    cursor: auto;
+}
+
+.blink {
+    animation: blink 1s infinite;
+    -webkit-animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    to {
+        opacity: 0.2;
+    }
+}
+@-webkit-keyframes blink {
+    to {
+        opacity: 0.2;
+    }
+}
